@@ -51,39 +51,37 @@ It focuses on **scalability, modularity, and maintainability**, making it suitab
 ---
 
 ## 🗂 Project Structure
-
 TechVault/
 │
-├── include/ # Header files
-│ ├── Encryptor.h
-│ ├── VaultItem.h
-│ ├── FileItem.h
-│ ├── PasswordItem.h
-│ ├── SnippetItem.h
-│ ├── Logger.h
-│ ├── Storage.h
-│ ├── VaultManager.h
-│ └── VaultItemFactory.h
+├── include/                  # Header files
+│   ├── Encryptor.h
+│   ├── VaultItem.h
+│   ├── FileItem.h
+│   ├── PasswordItem.h
+│   ├── SnippetItem.h
+│   ├── Logger.h
+│   ├── Storage.h
+│   ├── VaultManager.h
+│   └── VaultItemFactory.h
 │
-├── src/ # Source files
-│ ├── Encryptor.cpp
-│ ├── VaultItem.cpp
-│ ├── FileItem.cpp
-│ ├── PasswordItem.cpp
-│ ├── SnippetItem.cpp
-│ ├── Logger.cpp
-│ ├── Storage.cpp
-│ ├── VaultManager.cpp
-│ ├── VaultItemFactory.cpp
-│ └── main.cpp
+├── src/                      # Source files
+│   ├── Encryptor.cpp
+│   ├── VaultItem.cpp
+│   ├── FileItem.cpp
+│   ├── PasswordItem.cpp
+│   ├── SnippetItem.cpp
+│   ├── Logger.cpp
+│   ├── Storage.cpp
+│   ├── VaultManager.cpp
+│   ├── VaultItemFactory.cpp
+│   └── main.cpp
 │
-├── data/ # Encrypted runtime data
-│ ├── local_storage.txt
-│ └── cloud_storage.txt
+├── data/                     # Encrypted runtime data (ignored by git)
+│   ├── local_storage.txt
+│   └── cloud_storage.txt
 │
 ├── README.md
 └── techvault.exe
-
 
 ---
 
