@@ -114,3 +114,6 @@ techvault.exe
 ```bash
 ./techvault
 ```
+
+### Welcome and Main Menu
+![Welcome and Main Menu](assets/screenshots/welcome_menu.png)
