@@ -9,7 +9,7 @@ The project demonstrates **clean object-oriented design**, **design patterns**, 
 ## 📌 Project Overview
 
 TechVault is designed as a **command-line vault system** where different types of sensitive data are managed through a unified interface.  
-It focuses on **scalability, modularity, and maintainability**, making it suitable as a strong resume project for internships and entry-level roles.
+It focuses on **scalability, modularity, and maintainability**, and is designed with clean architecture to support future expansion and real-world system complexity.
 
 ---
 
@@ -51,6 +51,8 @@ It focuses on **scalability, modularity, and maintainability**, making it suitab
 ---
 
 ## 🗂 Project Structure
+
+```text
 TechVault/
 │
 ├── include/                  # Header files
