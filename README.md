@@ -109,4 +109,3 @@ techvault.exe
 ```bash
 ./techvault
 ```
-```
