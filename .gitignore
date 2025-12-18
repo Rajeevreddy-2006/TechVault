@@ -1,0 +1,13 @@
+# Executable files
+techvault
+techvault.exe
+
+# Runtime storage files
+local_storage.txt
+data/*.txt
+
+# Object files
+*.o
+
+# OS-specific files
+.DS_Store
