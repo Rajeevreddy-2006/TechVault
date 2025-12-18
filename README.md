@@ -97,7 +97,6 @@ Open a terminal **in the project root directory (TechVault)** and run:
 g++ src/*.cpp -Iinclude -o techvault
 
 ```
-```
 ### ▶️ Step 2: Run the Application
 
 After successful compilation, run the executable.
@@ -109,4 +108,5 @@ techvault.exe
 #### 🐧 Linux / 🍎 macOS
 ```bash
 ./techvault
+```
 ```
