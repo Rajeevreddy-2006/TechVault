@@ -14,44 +14,39 @@
 bool readInt(int& value) {
     std::cin >> value;
     if (std::cin.fail()) {
-        std::cin.clear();                 // clear error state
-        std::cin.ignore(10000, '\n');     // discard bad input
+        std::cin.clear();
+        std::cin.ignore(10000, '\n');
         return false;
     }
-    std::cin.ignore(10000, '\n');         // clear newline
+    std::cin.ignore(10000, '\n');
     return true;
 }
 
 // ---------------- UI: Banner ----------------
 void showBanner() {
     std::cout << R"(
-====================================================
- ████████╗███████╗ ██████╗██╗  ██╗██╗   ██╗ █████╗ ██╗   ██╗██╗     ████████╗
- ╚══██╔══╝██╔════╝██╔════╝██║  ██║██║   ██║██╔══██╗██║   ██║██║     ╚══██╔══╝
-    ██║   █████╗  ██║     ███████║██║   ██║███████║██║   ██║██║        ██║   
-    ██║   ██╔══╝  ██║     ██╔══██║╚██╗ ██╔╝██╔══██║██║   ██║██║        ██║   
-    ██║   ███████╗╚██████╗██║  ██║ ╚████╔╝ ██║  ██║╚██████╔╝███████╗   ██║   
-    ╚═╝   ╚══════╝ ╚═════╝╚═╝  ╚═╝  ╚═══╝  ╚═╝  ╚═╝ ╚═════╝ ╚══════╝   ╚═╝   
-
-              🔐 Secure Vault Management System
-====================================================
+--------------------------------------------------
+              Welcome to TechVault
+         Secure Vault Management System
+           Simple. Secure. Scalable.
+--------------------------------------------------
 )";
 }
 
 // ---------------- UI: Menu ----------------
 void showMenu() {
-    std::cout << "\n📋 Main Menu\n";
-    std::cout << "---------------------------------\n";
-    std::cout << "📁 1. Add File Item\n";
-    std::cout << "🔑 2. Add Password Item\n";
-    std::cout << "💻 3. Add Snippet Item\n";
-    std::cout << "📜 4. Show Vault Items\n";
-    std::cout << "💾 5. Save Vault\n";
-    std::cout << "🔄 6. Load & Reconstruct Vault\n";
-    std::cout << "🔍 7. Search Item by Name\n";
-    std::cout << "❌ 8. Delete Item by Name\n";
-    std::cout << "🚪 0. Exit\n";
-    std::cout << "---------------------------------\n";
+    std::cout << "\nMain Menu\n";
+    std::cout << "--------------------------------------\n";
+    std::cout << "1. Add File Item\n";
+    std::cout << "2. Add Password Item\n";
+    std::cout << "3. Add Snippet Item\n";
+    std::cout << "4. Show Vault Items\n";
+    std::cout << "5. Save Vault\n";
+    std::cout << "6. Load & Reconstruct Vault\n";
+    std::cout << "7. Search Item by Name\n";
+    std::cout << "8. Delete Item by Name\n";
+    std::cout << "0. Exit\n";
+    std::cout << "--------------------------------------\n";
     std::cout << "Enter choice: ";
 }
 
@@ -148,7 +143,7 @@ int main() {
             }
 
             case 0:
-                std::cout << "\n👋 Exiting TechVault. Goodbye!\n";
+                std::cout << "\nExiting TechVault. Goodbye!\n";
                 break;
 
             default:
