@@ -1,5 +1,11 @@
 # 🔐 TechVault  
 ## Secure Vault Management System (C++)
+![C++](https://img.shields.io/badge/Language-C%2B%2B-blue)
+![OOP](https://img.shields.io/badge/Concepts-OOP-green)
+![Design Patterns](https://img.shields.io/badge/Design%20Patterns-Strategy%20%7C%20Factory-orange)
+![CLI](https://img.shields.io/badge/Application-CLI-lightgrey)
+![Status](https://img.shields.io/badge/Status-Active-success)
+
 
 TechVault is a **menu-driven C++ application** that allows users to securely store, encrypt, and manage sensitive data such as files, passwords, and code snippets.  
 The project demonstrates **clean object-oriented design**, **design patterns**, and **real-world C++ project structure**.
