@@ -22,6 +22,39 @@ bool readInt(int& value) {
     return true;
 }
 
+// ---------------- UI: Banner ----------------
+void showBanner() {
+    std::cout << R"(
+====================================================
+ ████████╗███████╗ ██████╗██╗  ██╗██╗   ██╗ █████╗ ██╗   ██╗██╗     ████████╗
+ ╚══██╔══╝██╔════╝██╔════╝██║  ██║██║   ██║██╔══██╗██║   ██║██║     ╚══██╔══╝
+    ██║   █████╗  ██║     ███████║██║   ██║███████║██║   ██║██║        ██║   
+    ██║   ██╔══╝  ██║     ██╔══██║╚██╗ ██╔╝██╔══██║██║   ██║██║        ██║   
+    ██║   ███████╗╚██████╗██║  ██║ ╚████╔╝ ██║  ██║╚██████╔╝███████╗   ██║   
+    ╚═╝   ╚══════╝ ╚═════╝╚═╝  ╚═╝  ╚═══╝  ╚═╝  ╚═╝ ╚═════╝ ╚══════╝   ╚═╝   
+
+              🔐 Secure Vault Management System
+====================================================
+)";
+}
+
+// ---------------- UI: Menu ----------------
+void showMenu() {
+    std::cout << "\n📋 Main Menu\n";
+    std::cout << "---------------------------------\n";
+    std::cout << "📁 1. Add File Item\n";
+    std::cout << "🔑 2. Add Password Item\n";
+    std::cout << "💻 3. Add Snippet Item\n";
+    std::cout << "📜 4. Show Vault Items\n";
+    std::cout << "💾 5. Save Vault\n";
+    std::cout << "🔄 6. Load & Reconstruct Vault\n";
+    std::cout << "🔍 7. Search Item by Name\n";
+    std::cout << "❌ 8. Delete Item by Name\n";
+    std::cout << "🚪 0. Exit\n";
+    std::cout << "---------------------------------\n";
+    std::cout << "Enter choice: ";
+}
+
 int main() {
     // ---------- Encryption ----------
     XOREncryptor encryptor('K');
@@ -35,20 +68,12 @@ int main() {
     // ---------- Vault Manager ----------
     VaultManager manager(&localStorage, encryptor);
 
+    showBanner();
+
     int choice = -1;
 
     while (choice != 0) {
-        std::cout << "\n========== TECH VAULT ==========\n";
-        std::cout << "1. Add File Item\n";
-        std::cout << "2. Add Password Item\n";
-        std::cout << "3. Add Snippet Item\n";
-        std::cout << "4. Show Vault Items\n";
-        std::cout << "5. Save Vault\n";
-        std::cout << "6. Load & Reconstruct Vault\n";
-        std::cout << "7. Search Item by Name\n";
-        std::cout << "8. Delete Item by Name\n";
-        std::cout << "0. Exit\n";
-        std::cout << "Enter choice: ";
+        showMenu();
 
         if (!readInt(choice)) {
             std::cout << "[ERROR] Please enter a valid number.\n";
@@ -123,13 +148,13 @@ int main() {
             }
 
             case 0:
-                std::cout << "Exiting TechVault...\n";
+                std::cout << "\n👋 Exiting TechVault. Goodbye!\n";
                 break;
 
             default:
                 std::cout << "[ERROR] Invalid choice. Try again.\n";
         }
     }
-
+    
     return 0;
 }
