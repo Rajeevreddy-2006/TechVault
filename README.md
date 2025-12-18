@@ -85,11 +85,10 @@ TechVault/
 ├── README.md
 └── techvault.exe
 
----
+```
+### ⚙️ How to Build & Run
 
-## ⚙️ How to Build & Run
-
-### 🔧 Step 1: Compile the Project
+#### 🔧 Step 1: Compile the Project
 
 Open a terminal **in the project root directory (TechVault)** and run:
 
